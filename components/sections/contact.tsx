@@ -20,13 +20,12 @@ export function ContactSection() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // const response = await fetch("http://localhost:8000/api/contact", {   //for loacl machine
-       const response = await fetch(" https://portfolio-nextjs-backend.onrender.com/api/contact", { //live server
+      const response = await fetch("https://portfolio-nextjs-backend.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -60,11 +59,11 @@ export function ContactSection() {
           <p className="text-lg text-muted-foreground mb-8">
             I'm always open to discussing new projects and opportunities.
           </p>
-         
-            <Button size="lg" className="w-full sm:w-auto card example-4" onClick={toggleModal}>
-              <Mail className="mr-2 h-4 w-4" /> Contact Me
-            </Button>
-         
+
+          <Button size="lg" className="w-full sm:w-auto card example-4" onClick={toggleModal}>
+            <Mail className="mr-2 h-4 w-4" /> Contact Me
+          </Button>
+
         </motion.div>
       </div>
 
@@ -117,7 +116,7 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
-                  rows="4"
+                  rows={4}
                   placeholder="Your Message"
                 ></textarea>
               </div>
