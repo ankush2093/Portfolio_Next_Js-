@@ -15,18 +15,18 @@ export function ContactSection() {
     setIsOpen(!isOpen);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:8000/api/contact", {   //for loacl machine
-        // const response = await fetch(" https://portfolio-nextjs-backend.onrender.com/api/contact", { //live server
+      // const response = await fetch("http://localhost:8000/api/contact", {   //for loacl machine
+       const response = await fetch(" https://portfolio-nextjs-backend.onrender.com/api/contact", { //live server
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
