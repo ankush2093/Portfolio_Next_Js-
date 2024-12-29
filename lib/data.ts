@@ -27,7 +27,7 @@ export const projects = [
     description: "Recipe You Can Try and also share advanced filtering and search",
     tech: ["React", "Mongo Db", "Tailwind CSS","Auth JWT"],
     link: "https://front-end-recipe-management-system.vercel.app/",
-    img:'/projects-cover/recipe-management-system .png'
+    img:'/projects-cover/recipe-management-system.png'
   },
 
   {
