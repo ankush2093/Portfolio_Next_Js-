@@ -31,14 +31,15 @@ export function ProjectsSection() {
                 <p className="text-muted-foreground mb-4 flex-grow">
                   {project.description}
                 </p>
+                <h4 className="text-x font-bold">{project.note}</h4>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-primary/10 rounded-full text-sm "
-                    >
-                      {tech}
-                    </span>
+                    <div key={tech}>
+                      <span className="px-2 py-1 bg-primary/10 rounded-full text-sm ">
+                        {tech}
+                      </span>
+                    </div>
                   ))}
                 </div>
 

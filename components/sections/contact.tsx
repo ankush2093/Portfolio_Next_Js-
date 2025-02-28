@@ -69,64 +69,67 @@ export function ContactSection() {
 
       {/* Modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            className={`bg-${theme === 'dark' ? 'gray-800' : 'white'} p-8 rounded-lg shadow-lg max-w-lg w-full relative`}
-          >
-            <button
-              className="absolute top-4 right-4 text-gray-500 hover:text-black dark:hover:text-white"
-              onClick={toggleModal}
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <h3 className="text-2xl font-semibold mb-4">Contact Me</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
-                  rows={4}
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </Button>
-            </form>
-          </motion.div>
+  <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center">
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className={`p-8 rounded-3xl shadow-lg max-w-lg w-full relative 
+        ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'} 
+        ${theme === 'transparent' ? 'bg-opacity-80 backdrop-blur-md' : ''}`}
+    >
+      <button
+        className="absolute top-4 right-4 text-red-700 hover:text-black dark:hover:text-white"
+        onClick={toggleModal}
+      >
+        <X className="w-6 h-6" />
+      </button>
+      <h3 className="text-2xl font-semibold mb-4">Contact Me</h3>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
+            placeholder="Your Name"
+          />
         </div>
-      )}
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
+            placeholder="Your Email"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            className="mt-1 block w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-transparent dark:text-white"
+            rows={4}
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+          {isSubmitting ? "Sending..." : "Send Message"}
+        </Button>
+      </form>
+    </motion.div>
+  </div>
+)}
+
 
 
 

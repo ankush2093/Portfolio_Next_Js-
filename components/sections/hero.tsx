@@ -38,14 +38,14 @@ export function HeroSection() {
             transition={{ duration: 0.8 }}
             className="text-center md:text-left"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+            <h1 className="text-5xl md:text-6xl pt-10 font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
               Ankush Kumar
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-8">
               Full Stack Software Developer
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              I design and develop experiences that make people’s lives simpler through Web and Mobile apps. I work with HTML5, CSS3, JavaScript, React, and Flutter.
+            I design and develop intuitive web applications using HTML5, CSS3, SCSS, JavaScript, React and Next.js. With expertise in Express and Nest.js, I create seamless, user-centric experiences that simplify and enhance everyday life.
             </p>
             <div className="flex flex-col md:flex-row justify-center md:justify-start gap-4">
               <Button variant="outline" size="lg" className="w-full md:w-auto" onClick={handleProjectClick}>
@@ -72,5 +72,6 @@ export function HeroSection() {
       </div>
     </section>
   );
+  
   
 }

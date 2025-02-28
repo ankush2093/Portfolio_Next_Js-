@@ -18,9 +18,11 @@ export function AboutSection() {
         >
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            I'm a passionate software developer with 1+ years of experience in building
-            modern web applications. I specialize in creating scalable and performant
-            solutions using cutting-edge technologies.
+          As a passionate software developer with over a year of experience, 
+          I focus on building modern, scalable, and high-performance web applications. 
+          I specialize in using the latest technologies like React, Next.js, Express, and Nest.js to create seamless and user-friendly experiences. 
+          I’m committed to delivering efficient solutions that solve real-world problems, 
+          continuously learning and adapting to new tools and trends to stay ahead in this fast-evolving field.
           </p>
           <div className="flex justify-center gap-4">
             <Link href="https://github.com/ankush2093" target="_blank">
