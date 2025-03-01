@@ -7,11 +7,12 @@ export const projects = [
     img:'/projects-cover/bhagbatgit.png'
   },
   {
-    title: "Tech Mentor-Ship",
-    description: "Developed a real-time Internship Web Platform using the MERN stack, integrating features such as various internship listings.",
-    tech: ["React", "CSS","Express","Mongo DB"],
-    link: "https://techmentorship-git-main-ankush2093s-projects.vercel.app/",
-    img:'/projects-cover/techmentorship.png'
+    title: "Full Stack E-Commerce Amazon Clone",
+    description: "Developed a real-time Full Stack E-Commerce Amazon Clone using the MERN stack, integrating features such as user authentication, product listings,dynamic cart updates, ruzorpay payment gateway, order processing, and admin functionalities.",
+    note: "Note: This Site may be slow it is hosted on free server.  So please wait for some time",
+    tech: ["Next.js", "Tailwindcss","Sad-cn-ui", "Express","Mongo DB"],
+    link: "https://amazon-clone-frontend-neon.vercel.app/",
+    img:'/projects-cover/amazonclone.png'
   },
 
   {
@@ -21,6 +22,13 @@ export const projects = [
     note: "Note: This Site may be slow it is hosted on free server. So please wait for some time",
     link: "https://studynotionfrontend-git-main-ankush2093s-projects.vercel.app/",
      img:'/projects-cover/studynotion.png'
+  },
+  {
+    title: "Tech Mentor-Ship",
+    description: "Developed a real-time Internship Web Platform using the MERN stack, integrating features such as various internship listings.",
+    tech: ["React", "CSS","Express","Mongo DB"],
+    link: "https://techmentorship-git-main-ankush2093s-projects.vercel.app/",
+    img:'/projects-cover/techmentorship.png'
   },
 
   {

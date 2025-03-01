@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FileDown ,SquareChartGantt} from "lucide-react";
+import { FileDown, SquareChartGantt } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import heroImage from "../../public/herosection.png"; // Update with actual path
@@ -14,7 +14,7 @@ export function HeroSection() {
   const handleProjectClick = () => {
     router.push('#projects');
   };
-  
+
 
 
   const handleDownload = () => {
@@ -45,7 +45,7 @@ export function HeroSection() {
               Full Stack Software Developer
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-            I design and develop intuitive web applications using HTML5, CSS3, SCSS, JavaScript, React and Next.js. With expertise in Express and Nest.js, I create seamless, user-centric experiences that simplify and enhance everyday life.
+              I design and develop intuitive web applications using HTML5, CSS3, SCSS, JavaScript, React and Next.js. With expertise in Express and Nest.js, I create seamless, user-centric experiences that simplify and enhance everyday life.
             </p>
             <div className="flex flex-col md:flex-row justify-center md:justify-start gap-4">
               <Button variant="outline" size="lg" className="w-full md:w-auto" onClick={handleProjectClick}>
@@ -56,22 +56,35 @@ export function HeroSection() {
               </Button>
             </div>
           </motion.div>
-          <div className="relative w-full mt-8 md:mt-0">
+          {/* <div className="relative w-full mt-8 md:mt-0">
             <div className="rounded-tl-[150px] rounded-br-[150px] border-t-8 border-b-8 border-l-2 border-r-2 border-yellow-600 roudned-sm overflow-hidden">
               <Image
                 src={heroImage}
                 alt="Hero Image"
-                layout="responsive"
+                // layout="responsive"
                 width={500}
                 height={500}
                 className="object-cover"
               />
             </div>
+          </div> */}
+
+          <div className="relative w-full mt-8 md:mt-0">
+            <div className="rounded-tl-[150px] rounded-br-[150px] border-t-8 border-b-8 border-l-2 border-r-2 border-yellow-600 rounded-sm overflow-hidden">
+              <Image
+                src={heroImage}
+                alt="Hero Image"
+                width={400}
+                height={400}
+                className="object-cover w-full h-auto"
+              />
+            </div>
           </div>
+
         </div>
       </div>
     </section>
   );
-  
-  
+
+
 }
