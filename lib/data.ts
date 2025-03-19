@@ -11,7 +11,7 @@ export const projects = [
     description: "Developed a real-time Full Stack E-Commerce Amazon Clone using the MERN stack, integrating features such as user authentication, product listings,dynamic cart updates, ruzorpay payment gateway, order processing, and admin functionalities.",
     note: "Note: This Site may be slow it is hosted on free server.  So please wait for some time",
     tech: ["Next.js", "Tailwindcss","Sad-cn-ui", "Express","Mongo DB"],
-    link: "https://amazon-clone-frontend-neon.vercel.app/",
+    link: "https://amazon-clone-frontend-eosin.vercel.app/",
     img:'/projects-cover/amazonclone.png'
   },
 
