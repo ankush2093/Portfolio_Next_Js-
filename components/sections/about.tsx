@@ -27,12 +27,12 @@ export function AboutSection() {
           <div className="flex justify-center gap-4">
             <Link href="https://github.com/ankush2093" target="_blank">
               <Button variant="ghost" size="icon">
-                <Github className="h-10 w-10" />
+                <Github className="h-10 w-10  hover:bg-pink-700" />
               </Button>
             </Link>
             <Link href="https://www.linkedin.com/in/ankush2093/" target="_blank">
               <Button variant="ghost" size="icon">
-                <Linkedin className="h-10 w-10" />
+                <Linkedin className="h-10 w-10  hover:bg-sky-700" />
               </Button>
             </Link>
           </div>

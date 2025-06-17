@@ -2,17 +2,25 @@ export const projects = [
   {
     title: "Bhagavad Gita",
     description: "Bhagavad Gita is a web application built with React.js and JavaScript, utilizing the official API to provide users with verses, translations, and explanations. It offers a seamless and interactive experience for exploring the sacred teachings of the Gita.",
-    tech: ["React.js", "CSS", "Boots-Sharp","Api"],
+    tech: ["React.js", "CSS", "Boots-Sharp", "Api"],
     link: "https://glittering-bombolone-8668b0.netlify.app/",
-    img:'/projects-cover/bhagbatgit.png'
+    img: '/projects-cover/bhagbatgit.png'
+  },
+  {
+    title: "Coworking Space",
+    description: "Developed a real-time Full Stack Booking Meeting Room using the MERN stack, integrating features such as user authentication, meeting listings, ruzorpay payment gateway, order processing, generate invoice and admin functionalities.",
+    note: "Note: This Site may be slow it is hosted on free server.  So please wait for some time",
+    tech: ["Next.js", "Tailwindcss", "Sad-cn-ui", "Express", "Mongo DB"],
+    link: "https://coworking-gilt.vercel.app/",
+    img: '/projects-cover/coworking.png'
   },
   {
     title: "Full Stack E-Commerce Amazon Clone",
     description: "Developed a real-time Full Stack E-Commerce Amazon Clone using the MERN stack, integrating features such as user authentication, product listings,dynamic cart updates, ruzorpay payment gateway, order processing, and admin functionalities.",
     note: "Note: This Site may be slow it is hosted on free server.  So please wait for some time",
-    tech: ["Next.js", "Tailwindcss","Sad-cn-ui", "Express","Mongo DB"],
+    tech: ["Next.js", "Tailwindcss", "Sad-cn-ui", "Express", "Mongo DB"],
     link: "https://amazon-clone-frontend-eosin.vercel.app/",
-    img:'/projects-cover/amazonclone.png'
+    img: '/projects-cover/amazonclone.png'
   },
 
   {
@@ -21,32 +29,40 @@ export const projects = [
     tech: ["React.js", "Mongo DB", "Redux", "Ruzorpay"],
     note: "Note: This Site may be slow it is hosted on free server. So please wait for some time",
     link: "https://studynotionfrontend-git-main-ankush2093s-projects.vercel.app/",
-     img:'/projects-cover/studynotion.png'
+    img: '/projects-cover/studynotion.png'
   },
   {
     title: "Tech Mentor-Ship",
     description: "Developed a real-time Internship Web Platform using the MERN stack, integrating features such as various internship listings.",
-    tech: ["React", "CSS","Express","Mongo DB"],
-    link: "https://techmentorship-git-main-ankush2093s-projects.vercel.app/",
-    img:'/projects-cover/techmentorship.png'
+    tech: ["React", "CSS", "Express", "Mongo DB"],
+    link: "https://internship-project-wine.vercel.app/",
+    img: '/projects-cover/techmentorship.png'
   },
 
   {
     title: "Edtech Educational Api",
     description: "This is Api Of the Edtech Educational Website. Features i will interigate paymment gateway, AI for solving issue of student. AI will help like a instructor and many more.",
-    tech: ["Nestjs", "MYSQL","Auth JWT"],
+    tech: ["Nestjs", "MYSQL", "Auth JWT"],
     note: "Note: This Project is Under Devlopment. This Api may be slow it is hosted on free server",
     link: "https://edtech-ndk0.onrender.com/swagger#/",
-    img:'/projects-cover/edutechimage.png'
+    img: '/projects-cover/edutechimage.png'
+  },
+
+  {
+    title: "BMC Barber Shop",
+    description: "Developed a real-time Next Js Stactic Website Using Next.js, integrating features such as map of Shop",
+    tech: ["Next.js", "Tailwindcss", "Sad-cn-ui"],
+    link: "https://coworking-gilt.vercel.app/",
+    img: '/projects-cover/bmcbarbarshop.png'
   },
 
   {
     title: "Recipe-Management-System",
     description: "Developed a Recipe Management System using the MERN Stack.The system provides a seamless user experience for organizing anddiscovering new recipes, enhancing culinaryexploration and eﬃciency.",
-    tech: ["React", "Mongo Db", "Tailwind CSS","Auth JWT"],
+    tech: ["React", "Mongo Db", "Tailwind CSS", "Auth JWT"],
     note: "Note: This Site may be slow it is hosted on free server. So please wait for some time",
     link: "https://front-end-recipe-management-system.vercel.app/",
-    img:'/projects-cover/recipe-management-system.png'
+    img: '/projects-cover/recipe-management-system.png'
   },
 
   {
@@ -54,7 +70,7 @@ export const projects = [
     description: "Designed and developed a responsive school-website using Next.js, showcasing the institution’s portfolio and essential information in anaccessible format.",
     tech: ["Next.js", "SCSS", "Tailwind CSS"],
     link: "https://vmsfrontend-y4ow.vercel.app/",
-    img:'/projects-cover/vms.png'
+    img: '/projects-cover/vms.png'
   },
 
   {
@@ -63,7 +79,7 @@ export const projects = [
     note: "Note: This Project is Under Devlopment. It is not final looks of this project",
     tech: ["Next.js", "SCSS", "Tailwind CSS"],
     link: "https://aif-horizon-new.vercel.app/",
-    img:'/projects-cover/aifhorizon.png'
+    img: '/projects-cover/aifhorizon.png'
   },
 
   {
@@ -71,7 +87,7 @@ export const projects = [
     description: "Elevate your financial expertise with Aif Trading Academy’s intuitive React- based platform.Explore transparent fee structures, seamless Email.js-powered form submissions.",
     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
     link: "https://aif-trading-huv3-invdpq9dl-ankush2093s-projects.vercel.app/",
-    img:'/projects-cover/aiftrading.png'
+    img: '/projects-cover/aiftrading.png'
   },
 
   {
@@ -80,15 +96,15 @@ export const projects = [
     tech: ["React", "Express.js", "Socket.io"],
     note: "Note: This Site may be slow it is hosted on free server. So please wait for some time",
     link: "https://videochatappbyankush.netlify.app/",
-    img:'/projects-cover/chataap.png'
+    img: '/projects-cover/chataap.png'
   },
 
   {
     title: "Shopping Cart",
     description: "Shopping Cart is a real-time e-commerce application built with Next.js. It offers seamless product browsing, dynamic cart updates, and a smooth user experience without page reloads.",
-    tech: ["Next.js", "Tailwind CSS", "Redux","Dummy Api"],
+    tech: ["Next.js", "Tailwind CSS", "Redux", "Dummy Api"],
     link: "https://shoping-cart-pied-one.vercel.app/",
-    img:'/projects-cover/shoppingcart.png'
+    img: '/projects-cover/shoppingcart.png'
   },
 
   {
@@ -96,7 +112,7 @@ export const projects = [
     description: "Weather App is a real-time weather application that provides accurate forecasts, current conditions, and location-based updates with a user-friendly interface.",
     tech: ["React", "CSS", "Weather API"],
     link: "https://weatheraapbyaks.netlify.app/",
-    img:'/projects-cover/weather.png'
+    img: '/projects-cover/weather.png'
   },
 ];
 
